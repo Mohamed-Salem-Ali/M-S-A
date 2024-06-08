@@ -7,32 +7,6 @@ This is a personal website built using Django. The initial version features a bl
 - **Personal Website**: Serving as my online presence.
 - **Blog App**: A simple blog to post articles and updates.
 
-## Project Structure
-msa/
-├── blog/
-│ ├── migrations/
-│ ├── templates/
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── tests.py
-│ ├── urls.py
-│ └── views.py
-├── msa/
-│ ├── init.py
-│ ├── asgi.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── manage.py
-├── requirements.txt
-└── env/
-├── bin/
-├── include/
-├── lib/
-└── ...
-
 ## Installation
 
 1. **Clone the repository:**
