@@ -1,2 +1,2 @@
-# MSA-
+# M-S-A
 Personal website built with Django, featuring a blog app.
