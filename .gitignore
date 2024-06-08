@@ -1,0 +1,19 @@
+# .gitignore
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+
+# Django
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+*.venv
+
+# VS Code
+.vscode/
