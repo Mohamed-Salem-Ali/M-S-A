@@ -13,10 +13,27 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+    
+    
+    
+    
+    
+    urls:
+    
+    /
+    /posts ===> load starting page which kists latest blog posts and some welcome text
+    /posts/my-first-post ===> load page which lists all blog posts
+    /posts/<slug> ===> # slugs always look something like this: my-post-is-here => SEO-friendly unique identifiers
+    
+    
+    
+    
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('posts/',include("blog.urls")),
+    
 ]
