@@ -3,8 +3,6 @@ from django.http import HttpResponse,HttpResponseNotFound,request
 # Create your views here.
 
 
-def posts(request):
-    pass
 
 
 def post_detail(request,post):
@@ -17,3 +15,15 @@ def post_detail(request,post):
 
 def starting_page(request):
     return render(request,"blog/home.html")
+
+def contact(request):
+    return render(request,"blog/contact.html")
+
+def about(request):
+    return render(request,"blog/about.html")
+
+def blog(request):
+    return render(request,"blog/blog.html")
+
+def posts(request):
+    return render(request,"blog/all_posts.html")

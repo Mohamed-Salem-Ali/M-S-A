@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Posts | MSA Blog{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="intro">
+    <h2>Blog</h2>
+    <div class="posts">
+    </div>
+</section>
+{% endblock %}

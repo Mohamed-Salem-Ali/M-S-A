@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact | MSA Blog{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/posts.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="intro">
+    <h2>Latest Posts</h2>
+    <div class="posts">
+        <!-- Sample post -->
+        <article class="post">
+            <h3><a href="#">Post Title 1</a></h3>
+            <p>Post summary goes here. This is a brief description of the post content.</p>
+        </article>
+        <article class="post">
+            <h3><a href="#">Post Title 2</a></h3>
+            <p>Post summary goes here. This is a brief description of the post content.</p>
+        </article>
+        <!-- Add more posts as needed -->
+    </div>
+</section>
+{% endblock %}
