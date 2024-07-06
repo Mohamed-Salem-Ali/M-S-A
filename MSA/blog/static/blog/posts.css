@@ -1,0 +1,27 @@
+.intro {
+    text-align: center;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
