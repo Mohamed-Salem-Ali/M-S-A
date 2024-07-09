@@ -1,35 +1,51 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Home | MSA Blog{% endblock %}
-
 {% block css_files %}
-<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+<link rel="stylesheet" href="{% static 'blog/post.css' %}">
 {% endblock %}
 
 {% block content %}
-<section class="intro">
+<header id="main-navigation">
+    <h1><a href="">MSA's Blog</a></h1>
+    <nav>
+        <a href="">All Posts</a>
+    </nav>
+</header>
+
+
+<section id="welcome">
     <header>
-        <img src="" alt="Mohamed Salem Ali" />
-        <h1>MSA's Blog</h1>
+        <img src="{% static 'blog/images/MSA.jpg' %}" alt="MSA - The Author of this Blog" >
+        <h2>MohamedSalemAli's BLOG</h2>
     </header>
     <p>Hi, I am Mohamed Salem and I love to blog about tech and the world!</p>
 </section>
 
-<section class="latest-posts">
+
+<section id="latest-posts">
     <h2>My Latest Posts</h2>
     <ul>
         <li>
             <article class="post">
-                <a href="#">
-                    <img src="" alt="Mountain Hiking" />
+                <a href="">
+                    <img src="{% static 'blog/images/mountains.jpg' %}" alt="Mountain Hiking" />
                     <div class="post__content">
                         <h3>Mountain Hiking</h3>
                         <p>There's nothing like the views you get when hiking in the mountains! And I wasn't even
-                            prepared for what happend whilst I was enjoying the view !.</p>
+                            prepared for what happend whilst I was enjoying the view !.
+                        </p>
                     </div>
                 </a>
             </article>
         </li>
     </ul>
+</section>
+<section id="about">
+    <h2>What I Do</h2>
+
+    <p>
+        testing
+    </p>
 </section>
 {% endblock %}

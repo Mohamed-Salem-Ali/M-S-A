@@ -1,37 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}MSA Blog{% endblock %}</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+   
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
     {% block css_files %}
     <!-- Additional CSS files can be added here by child templates -->
     {% endblock %}
 </head>
 <body>
-    <header>
-        
-        <nav>
-            <ul>
-                <li><a href="{% url 'starting-page' %}">Home</a></li>
-                <li><a href="{% url 'about-page' %}">About</a></li>
-                <li><a href="{% url 'posts-page' %}">Posts</a></li>
-                <li><a href="{% url 'blog-page' %}">Blog</a></li>
-                <li><a href="{% url 'contact-page' %}">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
         {% block content %}
         <!-- Content of the page will be injected here by child templates -->
         {% endblock %}
-    </main>
-
-    <footer>
-        <p>&copy; 2024 MSA Blog. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 MSA Blog. All rights reserved.</p>
+        </footer>
 </body>
+
 </html>
