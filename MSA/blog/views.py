@@ -5,13 +5,8 @@ from django.http import HttpResponse,HttpResponseNotFound,request
 
 
 
-def post_detail(request,post):
-    if post == "first":
-        return HttpResponse("<h1>this is my first post</h1>")
-    elif post == "second":
-        return HttpResponse("<h1>this is my second post</h1>")
-    else:
-        return HttpResponseNotFound("no posts")
+def post_detail(request,slug):
+    return render(request, "blog/post-detail.html")
 
 def starting_page(request):
     return render(request,"blog/home.html")
