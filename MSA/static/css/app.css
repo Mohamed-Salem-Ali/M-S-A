@@ -46,3 +46,18 @@ h3 {
 #main-navigation h1 a:active {
   color: white;
 }
+
+footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+footer p {
+  margin: 0;
+}
