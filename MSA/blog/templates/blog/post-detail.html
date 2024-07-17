@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-  this post title
+{{post.title}}
 {% endblock %}
 
 {% block css_files %}
@@ -11,18 +11,17 @@
 
 {% block content %}
   <section id="summary">
-    <h2>Post Title</h2>
+    <h3>{{post.title}}</h3>
     <article>
-      <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title" />
-      <address>By Mohamed Salem Younes</address>
+      <img src="{% static 'blog/images/'|add:post.image  %}" alt="{{post.title}}" />
+      <address>By {{post.author|title}}</address>
       <div>
-        last updated on <time datetime="">July 16th</time>
+        last updated on <time>{{post.date|date:"d M Y"}}</time>
       </div>
     </article>
   </section>
   <main>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel non aut perspiciatis tempora ipsam dolorem? Temporibus, quidem, voluptate quos nam quod sed architecto iusto perspiciatis incidunt eveniet eos fuga hic?</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel non aut perspiciatis tempora ipsam dolorem? Temporibus, quidem, voluptate quos nam quod sed architecto iusto perspiciatis incidunt eveniet eos fuga hic?</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel non aut perspiciatis tempora ipsam dolorem? Temporibus, quidem, voluptate quos nam quod sed architecto iusto perspiciatis incidunt eveniet eos fuga hic?</p>
+    <p> {{post.content|linebreaks}} </p>
+
   </main>
 {% endblock %}
