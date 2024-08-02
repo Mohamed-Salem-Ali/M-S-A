@@ -74,11 +74,6 @@ def post_detail(request, slug):
     return render(request, 'blog/post-detail.html', {'post': post})
 
 
-
-def get_date(post):
-    return post['date']
-
-
 def contact(request):
     return render(request,"blog/contact.html")
 
@@ -93,8 +88,8 @@ def posts(request):
     return render(request,"blog/all_posts.html",{
         "all_posts":posts
     })
-    
-    # def post_detail(request,slug):
+ 
+# def post_detail(request,slug):
 #     identified_post = next(post for post in all_posts if post['slug']==slug)
 #     return render(request, "blog/post-detail.html",{
 #         "post": identified_post
