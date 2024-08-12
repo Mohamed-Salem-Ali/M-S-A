@@ -1,7 +1,7 @@
 # MSA (Mohamed Salem Ali)
 
 ## Description
-This is a personal website built using Django. The initial version features a blog app, where I will be posting articles and updates.
+This is a website built using Django. The initial version features a blog app, where I will be posting articles and updates.
 
 ## Features
 - **Personal Website**: Serving as my online presence.
